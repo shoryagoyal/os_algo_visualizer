@@ -1,0 +1,31 @@
+body{
+    background-color: #14213d; 
+}
+.page-container {
+    width : 70%;
+    margin: 0 auto;
+}
+.page-heading {
+    color: #e5e5e5;
+    padding-bottom: 4px;
+    text-align: center;
+    border-bottom: 2px solid #e5e5e5; 
+    font-size: 4rem;
+}
+li {
+    list-style: none;
+}
+.algo {
+    margin-bottom: 20px; 
+}
+.algorithm-links{ 
+    color: #fca311; 
+    text-decoration: none; 
+    font-size: 1.3rem;
+    /* border: 1px solid white; */
+}
+.algorithm-links:hover { 
+    text-decoration: none;
+    color: #e5e5e5; 
+    transition: 0.5s ease;
+}

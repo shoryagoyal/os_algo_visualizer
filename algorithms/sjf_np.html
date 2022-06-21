@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortest job first</title>
+</head>
+<body>
+    <h1>Shortest Job First (Non-preamptive)</h1>
+    <table class = "processTable">
+        <thead>
+            <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Execution time</th>
+            </tr>
+        </thead>
+        <tbody id = "processData">
+            <tr>
+                <td>P0</td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+        </tbody>
+    </table> 
+    <div>
+        <button id = "addProcess">Add process</button> 
+    </div>
+    <div>
+        <button id = "run_algo">Run FCFS Algorithms</button>
+    </div>
+    <div id = "result">
+        <table>
+            <thead>
+                <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Completion Time</th>
+                    <th>Turn around time</th>
+                    <th>Wait time</th>
+                </tr>
+            </thead>
+            <tbody id = "tbodyResult">
+
+            </tbody>
+        </table>
+        <div>Average waiting time = <span id = "averageWaitTime"></span></div>
+    </div>
+    <script src = "../jsFiles/sjf_np.js"></script>
+</body>
+</html>

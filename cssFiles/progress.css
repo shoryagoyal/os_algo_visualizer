@@ -1,0 +1,15 @@
+.image-cont {
+    width: 50%;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+}
+.pageHeading {
+    text-align: center;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    border-radius: 50%;
+}

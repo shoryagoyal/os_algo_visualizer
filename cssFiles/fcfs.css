@@ -1,0 +1,24 @@
+body{
+    background-color: #14213d;  
+    color: #e5e5e5;
+}
+th, td{
+    color: #e5e5e5;
+}
+.page-container {
+    width : 70%;
+    margin: 0 auto;
+}
+#result {
+    display: none;
+}
+.algo_heading {
+    text-align: center; 
+    margin-top: 1rem; 
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+.run_button {
+    margin: 0 auto;
+    margin-left: 45%;
+}

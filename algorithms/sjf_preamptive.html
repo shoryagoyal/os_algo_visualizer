@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../cssFiles/main.css">
-    <title>Shortest job first</title>
+    <link rel="stylesheet" href="../cssFiles/fcfs.css">
+    <title>FCFS Algorithm</title>
 </head>
 <body>
-    <h1 class = "algo_heading">Shortest Job First (Non-preamptive)</h1>
+    <h1 class = "algo_heading">Shortest job first preamptive version</h1>
     <div class = "page-container">
         <table class = "processQueue table table-bordered">
             <thead>
@@ -22,38 +22,19 @@
             <tbody id = "processData">
                 <tr>
                     <td>P0</td>
-                    <td><input type="number" required></td>
-                    <td><input type="number" required></td>
+                    <td><input type="number"></td>
+                    <td><input type="number"></td>
                 </tr>
             </tbody>
         </table> 
         <div>
-            <button id = "addProcess" class = "btn btn-primary">Add process</button> 
+            <button id = "rowAdd" class = "btn btn-primary">Add process</button> 
         </div>
-        <div class = "error_fill_all_field">**Please fill all the fields in process table</div>
         <div class = "mt-2 mb-4 run_button">
             <button id = "run_algo" class = "btn btn-outline-success">Run FCFS Algorithms</button>
         </div>
-        <div id = "result">
-            <table  class = "table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Process</th>
-                        <th>Arrival Time</th>
-                        <th>Burst Time</th>
-                        <th>Completion Time</th>
-                        <th>Turn around time</th>
-                        <th>Wait time</th>
-                    </tr>
-                </thead>
-                <tbody id = "tbodyResult">
-    
-                </tbody>
-            </table>
-            <div>Average waiting time = <span></span></div>
-        </div>
     </div>
-    <script src = "../jsFiles/sjf_np.js"></script>
+    <script src = "../jsFiles/sjf_preamptive.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

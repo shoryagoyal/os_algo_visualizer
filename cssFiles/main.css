@@ -22,3 +22,7 @@ th, td{
     margin: 0 auto;
     margin-left: 45%;
 }
+.error_fill_all_field {
+    color: red;
+    display: none;
+}

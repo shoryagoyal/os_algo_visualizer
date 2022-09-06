@@ -100,8 +100,12 @@ function shortestJobFirst_np() {
     q = new Queue(); 
     pq = new PriorityQueue();
     let n = processes.length; 
-    // data in sortedOrder array is sorted based on arrival time of process. 
-    sortedOrder = processes.sort(function(a, b)  {
+    // data in sortedOrder array is sorted based on arrival time of process.  
+    let sortedOrder = new Array(n); 
+    for(let i = 0; i < n; i++) {
+        sortedOrder[i] = processes[i];
+    }
+    sortedOrder.sort(function(a, b)  {
         return a.arrivalTime-b.arrivalTime; 
     });  
     for(i = 0; i < n; i++) {
